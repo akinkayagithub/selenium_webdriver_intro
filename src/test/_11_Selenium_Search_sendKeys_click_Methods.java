@@ -13,7 +13,7 @@ public class _11_Selenium_Search_sendKeys_click_Methods {
     2. Search for "Tesla"
     3. Validate the main heading of the page is "Tesla"
 
-    NOTE: for the test case below we will use sendKeys(), click() and getText() methods
+    NOTE: for the test case above we will use sendKeys(), click() and getText() methods
     -click() method: this method is used to click on a located web element
     -sendKeys() method: this method is used to type in a located input web element
     -getText() method: this method is used to get the inner text of a located web element
