@@ -20,10 +20,10 @@ public class _03_Selenium_Locators_ID {
     -Due to all benefits above, it is highly recommended to use id locator to locate any web element if it is present
 
     TEST CASE:
-    1. Go to https://www.google.com/
-    2. Validate the Google Image is displayed on the top of the search input box
+    1. Go to https://www.wikipedia.org/
+    2. Validate the Wiki search input box is displayed in the middle of the page
 
-    NOTE: The Google Image has an id attribute as "hplogo"
+    NOTE: The search input box has an id attribute as "searchInput"
     NOTE: isDisplayed() method is used to verify the presence of a particular web element, and it will return true if element is found, and false otherwise
      */
 
@@ -32,13 +32,13 @@ public class _03_Selenium_Locators_ID {
         WebDriver driver = Driver.getDriver();
 
         // 2. Navigate to "https://www.google.com/" using get() method
-        driver.get("https://www.google.com/");
+        driver.get("https://www.wikipedia.org/");
 
-        // 3. Locate the Google Image element and make sure that it is displayed
-        WebElement googleImage = driver.findElement(By.id("hplogo"));
+        // 3. Locate the search input element and make sure that it is displayed
+        WebElement searchInputBox = driver.findElement(By.id("searchInput"));
 
-        if(googleImage.isDisplayed()) System.out.println("The image validation PASSED");
-        else System.out.println("The image validation FAILED");
+        if(searchInputBox.isDisplayed()) System.out.println("The search input box validation PASSED");
+        else System.out.println("The search input box  validation FAILED");
 
         // 4. Use Driver util method - quitDriver() to quit browser session
         Driver.quitDriver();
